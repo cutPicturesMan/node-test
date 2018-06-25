@@ -15,6 +15,57 @@
 // });
 
 /*********************************/
+// const { exec } = require('child_process');
+// exec('cat *.js bad_file | wc -l', (err, stdout, stderr) => {
+// 	if(err){
+// 		console.log(err);
+// 		return;
+// 	}
+//
+// 	console.log(`stdout: ${stdout}`);
+// 	console.log(`stderr: ${stderr}`);
+// })
+
+/*********************************/
+// const cp = require('child_process');
+// const util = require('util');
+// const exec = util.promisify(cp.exec);
+//
+// async function lsExample(){
+// 	let { stdout, stderr } = await exec('ls');
+//
+// 	console.log(`stdout: ${stdout}`);
+// 	console.log(`stderr: ${stderr}`);
+// }
+//
+// lsExample();
+
+/*********************************/
+// const { execFile } = require('child_process');
+// execFile('node', ['--version'], (err, stdout, stderr) => {
+// 	if(err){
+// 		console.log(err);
+// 		return;
+// 	}
+//
+// 	console.log(stdout);
+// })
+
+/*********************************/
+// const cp = require('child_process');
+// const util = require('util');
+// const execFile = util.promisify(cp.execFile);
+//
+// async function ef(){
+// 	let { stdout, stderr } = await execFile('node', ['--version']);
+//
+// 	console.log(`stdout: ${stdout}`);
+// 	console.log(`stderr: ${stderr}`);
+// }
+//
+// ef();
+
+/*********************************/
 // const { spawn } = require('child_process');
 // const util = require('util');
 // const node = spawn('node', ['test/a.js']);
@@ -87,3 +138,4 @@
 // subprocess.on('error', (err)=>{
 //   console.log(`启动子进程失败: ${err}`);
 // });
+
