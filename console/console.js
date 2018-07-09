@@ -23,9 +23,12 @@
 // 	colors: true
 // });
 
-const code = 5;
-console.error('error #%d', code);
-console.error('error', code);
+// const code = 5;
+// console.error('error #%d', code);
+// console.error('error', code);
+
+// console.table([{name: '小明', age: 26}, {name: '小红', age: 27}]);
+// console.table([{ a: 1, b: 'Y' }, { a: 'Z', b: 2 }]);
 
 /**********************************/
 // const { Console } = console;
@@ -37,3 +40,10 @@ console.error('error', code);
 // const logger = new Console(output, errorOutput);
 // const count = 5;
 // logger.log('count: %d', count);
+
+/**********************************/
+console.time('100-elements');
+for (let i = 0; i < 100; i++) {}
+console.timeEnd('100-elements');
+for (let i = 0; i < 100; i++) {}
+console.timeEnd('100-elements');

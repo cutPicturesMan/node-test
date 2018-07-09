@@ -5,4 +5,6 @@ some simple node demo
 []child_process
 []cluster
 
+[x]fs
 [x]console
+[x]util
