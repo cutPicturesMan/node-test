@@ -12,3 +12,7 @@
 // });
 
 /****************************/
+const fs = require('fs');
+const Buffer = require('buffer');
+
+fs.open()
