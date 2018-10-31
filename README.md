@@ -8,3 +8,4 @@ some simple node demo
 [x]fs
 [x]console
 [x]util
+[x]url
